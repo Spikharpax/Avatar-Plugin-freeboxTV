@@ -1,0 +1,88 @@
+{
+	"modules" : { 
+		"freeboxTV"  : {
+			"version": "1.0",
+			"NoXMLGrammar" : true,
+			"Freebox" : "Freebox TV",
+			"bouquets"  : ["favori"],
+			"label_no_program" : "Programme indisponible",
+			"rules" : {
+				"GetTVPrograms" : ["what is * (tv|television)","what * (tv|television)"],
+				"recorded" : ["(programs|program) * ~record~","~record~ * (programs|program)","recorded programs","recorded program","record programs","record program"]
+			},
+			"lexic" : {
+				"NRJ 12" : ["NRJ12"],
+				"National Geographic Channel" : ["National Geographic", "National Geographic Channel"],
+				"TFX" : ["TSX", "TF6"],
+				"TF1 Séries Films" : ["TF1 Séries Films", "TF1 Série Film"],
+				"Science & Vie TV" : ["Science et Vie TV", "Science et Vie"],
+				"Planete+" : ["planète +", "planète plus"],
+				"Nat Geo Wild" : ["nat géo wild", "nat géo"]
+			},
+			"tvProgFound" : "J'ai trouvé un programme intéréssant. %s sur %c. Voulez-vous que je le mette ?|y'a un truc intéressant qui passe. %s sur %c. Ca vous branche ?",
+			"askme_programTV" : { 
+				"qu'est ce que je peux dire" : "sommaire",
+				"répète": "again",
+				"encore": "again",
+				"donne-moi le résumé complet": "fullresume",
+				"donne-moi le résumé": "resume",
+				"suivant" : "next",
+				"passe au suivant" : "next",
+				"a gauche" : "previousprog",
+				"a droite" : "nextprog",
+				"next" : "next",
+				"a quelle heure" : "hour",
+				"programme le": "programme",
+				"tu peux le programmer": "programme",
+				"enregistre le": "record",
+				"mets le": "setIt",
+				"tu peux le mettre": "setIt",
+				"rappelle le moi": "recorder",
+				"reviens au type": "done",
+				"reviens au menu": "done",
+				"reviens au sommaire": "done",
+				"non c'est bon" : "done",
+				"non merci" : "done",
+				"merci sarah" : "Sarahcancel",
+				"terminer" : "cancel"
+			 },
+			 "askme_PrevNextPrg" : {
+				"enregistre le": "record",
+				"mets le": "setIt",
+				"tu peux le mettre": "setIt",
+				"rappelle le moi": "recorder",
+				"programme le": "programme",
+				"tu peux le programmer": "programme",
+				"a droite" : "next",
+				"a gauche" : "previous",
+				"non merci" : "done",
+				"terminer" : "done",
+				"retour" : "done"
+			 },
+			 "askSetProgramTV"	: { 
+				"oui vas-y" : "yes",
+				"oui s'il te plait" : "yes",
+				"non enregistre" : "record",
+				"enregistre-le" : "record",
+				"qu'est ce que je peux dire" : "sommaire",
+				"non merci": "cancel",
+				"non c'est bon": "cancel"
+			},
+			"recordAlreadyStarted": { 
+				"oui vas-y" : "yes",
+				"oui s'il te plait" : "yes",
+				"non merci": "cancel",
+				"terminé" : "cancel",
+				"annule" : "cancel"
+			}
+		}
+	},
+	"cron" : {
+		"freeboxTV" :   { 
+		  "name"       : "freeboxTV",
+		  "description": "freeboxTV Cron",
+		  "version": "1.0",
+		  "time"   : "*/45 * * * *"
+		}
+	}
+}

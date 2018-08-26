@@ -12,7 +12,7 @@ Il permet de demander à Avatar le programme tv:
 - Pour un jour de la semaine à une heure donnée
 - Demandez le programme sur la chaine de votre choix
 - Mais aussi la possibilité par catégorie de programmes:
-	- Avatar vous énnumère les programmes trouvés par la catégorie que vous voulez
+	- Avatar vous énumère les programmes trouvés par la catégorie que vous voulez
 - Demandez à Avatar de mettre le programme lorsqu'il passera et il changera de chaine automatiquement lorsque le moment sera venu
 - Fonction rappel de programme:
 	- Si un programme favori passe, à n'importe quelle heure et sur n'importe quelle chaine:
@@ -38,7 +38,7 @@ Il permet de demander à Avatar le programme tv:
 
 ### Bouquet
 
-Ajoutez dans la propriéte "bouquets" le bouquet qui est à utiliser pour énnumérer les programmes TV.
+Ajoutez dans la propriéte "bouquets" le bouquet qui est à utiliser pour énumérer les programmes TV.
 Pour toutes les chaines, vou pouvez mettre "Freebox TV"
 
 Par défaut, à l'installation, le bouquet utilisé est "favori"
