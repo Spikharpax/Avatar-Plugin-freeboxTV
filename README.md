@@ -45,7 +45,7 @@ Par défaut, à l'installation, le bouquet utilisé est "favori"
 
 ### Lexic
 
-Certains noms de chaines sont mal reconnus par la reconnaiisance vocale, vous pouvez ajouter dans le lexic, des mots ou chaines de caractères qui seront mieux  reconnus par Avatar.
+Certains noms de chaines sont mal reconnus par la reconnaissance vocale, vous pouvez alors ajouter dans le lexic des termes qui seront mieux reconnus par Avatar pour chaque chaine.
 A gauche, le véritable noms de la chaine, à droite, un tableau de lexic.
 
 
