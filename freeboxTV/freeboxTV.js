@@ -350,11 +350,15 @@ function TvAction(tts, programs, client) {
 		"non c'est bon" : "cancel",
 		"merci sarah" : "cancel"
 	}, 0, function (answer, end) {
-		end(client);
-		if (!answer)
+		
+		if (!answer) {
+			end(client);
 			return TvAction("je n'ai pas compris, recommence", programs, client);
+		}
 		
 		if (answer.indexOf('choice') != -1) {
+			end(client);
+			
 			var choice = answer.split(':')[1];
 			var found;
 			
