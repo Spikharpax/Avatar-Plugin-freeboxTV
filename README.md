@@ -80,6 +80,9 @@ Le plugin vous énumère dans l'ordre des jours d'enregistrement ce qu'il a enre
  
 
 ## Versions
+Version 1.1
+- - Ajout d'un répertoire assets pour une description et une image (Avatar 3.0)
+
 Version 1.0 
 - Version Released
 
